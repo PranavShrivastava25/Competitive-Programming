@@ -1,4 +1,13 @@
 /*
+If we divide an array in certains segments, not necessarily distinct. And we want to find in how many segment ai appears?
+Eg: {1,2,4,6,8}
+segments={l,r}= {1,3},{2,5},{1,5}
+for every l do dp[l}++ and dp[r+1]-- , 
+finally find the prefixsum of dp array : the final dp[i] = number of segments in which ai appear.
+*/
+
+
+/*
 
 Q-> https://codeforces.com/problemset/problem/1903/C
 
