@@ -23,3 +23,10 @@ Eg : Array = {a1,a2,a3,a4,a5,a6,a7,a8,a9,a10}
      In this way the maximum value of left boundary can be 2*m = 2*10^5 ---> to avoid TLE
 
 */
+
+=================== ARRAY SHIFTING =============
+ /*
+ When we shift array , by shifting last element to first and then shifting the other part of array. 
+ The array just moves in the circular format , just the head get shifted. 
+ Even if the array is reversed in some steps , the head is shifted along with change in direction.
+*/
