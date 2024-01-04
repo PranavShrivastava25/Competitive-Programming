@@ -30,3 +30,25 @@ Eg : Array = {a1,a2,a3,a4,a5,a6,a7,a8,a9,a10}
  The array just moves in the circular format , just the head get shifted. 
  Even if the array is reversed in some steps , the head is shifted along with change in direction.
 */
+
+     SUBSET SUM USING BITSET 
+/*
+We can use bitset from c++ stl, to find if a certain sum is possible when a set of number is given (the same can also be done usnig dp)
+Bitset are much faster in comparison to boolean array , and provide functions for right shift and left shift
+
+arary ={ 1,2,4,5,7,9}
+
+Create a bitset of size of totalsum+1 
+bitset<ts+1>bits;
+bits[0]=1;
+for(int i=0;i<arr.size();i++){
+  bits=bits|(bits<<arr][i])
+}
+
+To check if a certain subset sum is possible :   if bits.test(i) returns true, subset sum = 'i' is possible 
+
+Logic: initially bits[0]=1 , which means 0 as sum is possible
+      If i add 3 from array : it means 0 and (0+3) is possible , so if i shift all currently set bits  (which is bits[0]) by 3 
+      and take their OR , bits[3] and bits[0] will be 1 .
+      If i add 4, possible = 0, 3, (0+4) , (3+4) --> It can be seen why left shifting works.
+*/
