@@ -7,9 +7,9 @@ Sort these left and right boundaries together, with a type to indicate whether i
 Now start from maximum ,
 if it is right this segment is opened, insert the boundary in multiset
 set ans[ind]=multiset.rbegin() -> maximum element currently in multiset -> ind is index of this boundary
-if we get a left boundary now --> remove the ans[ind] from multiset  -> ind is index of this left boundary --> segment is closed
+if we get a left boundary now --> extract the ans[ind] from multiset  -> ind is index of this left boundary --> segment is closed
 But if we get a right boundary again -> set ans[ind]=multiset.rbegin() -> in this case the previous segment was still not closed so the previous segment and this
-segment is now merged as ms.rbegin() is right boundary of prebious segment.
+segment is now merged as ms.rbegin() is right boundary of previous segment.
 In this way common segment will get merged.
 
 */
