@@ -6,3 +6,12 @@
   Visulaise as  c-d--a->x-->y-->z--->p-->q-->b       ---> When we run dfs from a --> b will be farthest , 
                        / \      \       /\                when we run dfs from b , c will be farthest 
                       r   s     t      u  v
+
+
+-------------------- checking if a node is a descendent of other ----------------------
+
+  /*
+  We can use t-in and t-out for the dfs calls ,
+  and a node b is a descendant of node a, only if
+  tin[a]<=tin[b]<=tout[b]<=tout[a]
+  */
