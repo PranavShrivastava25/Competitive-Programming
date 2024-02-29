@@ -17,3 +17,9 @@ Use __builtin_popcount(n)  for this
 -> Following this logic if we want to easily find the xor of a range of numbers in an array ;
  we can use prefixxor array .
    Then xor[a...b]= prefixxor[b]^prefixxor[a-1]
+
+-> Find N distinct number whose XOR is 0 
+ ----- Take first n-2 number as 1,2,3.....n-2 . If xor of these is 0, leave n-2 and take n-1
+       If xor of these number is say 'X'
+       Take remaining two number as (2^30) and (2^30 + X)
+   
