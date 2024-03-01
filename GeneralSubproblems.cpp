@@ -6,4 +6,6 @@ of sz). If the number of objects of type mx is at most the number of all other o
 if the total number of objects is odd). Otherwise, we can create tot−szmx pairs of the form (mx,i) for all i except mx .
 */
 
-
+/*
+A perfect square when divided by 4 either leaves remainder 0 or 1
+*/
